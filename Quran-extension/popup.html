@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>Quran Reminder</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      Quran Reminder
+    </header>
+    <form>
+      <div class="onoffswitch">
+        <input
+          type="checkbox"
+          name="default"
+          class="onoffswitch-checkbox"
+          id="default"
+        />
+        <label class="onoffswitch-label" for="default">
+          <span class="onoffswitch-inner"></span>
+          <span class="onoffswitch-switch"></span>
+        </label>
+      </div>
+      <div id='timesound'>
+        <span class="time-text" id="time-text">Every
+          <input
+            type="number"
+            name="time"
+            id="time"
+            value="5"
+            max="59"
+            maxlength="2"
+          />
+          minutes
+          <img id='sound-on' src='img/speaker.svg' height="25" width="25"/>
+          <img id='sound-off' src='img/mute.svg' height="25" width="25"/>
+        </span>
+        <span id="timeError" class="error">Oups, make sure your value is between 1 to 59!</span>
+      </div>
+      <div>
+        <input type="submit" value="Update" id="submit" />
+      </div>
+      <span id="updateReminder" class="error">
+        There are unsaved changes, <br> make sure to click Update!</span>
+    </form>
+  </body>
+  <script src="/js/jquery.js"></script>
+  <script src="/js/popup.js"></script>
+</html>

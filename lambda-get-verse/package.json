@@ -1,0 +1,9 @@
+{
+    "name": "send-email",
+    "author": "khouloud",
+    "version": "1.0.0",
+    "dependencies": {
+        "aws-sdk": "^2.826.0",
+        "csv-parser": "^3.0.0"
+    }
+  }
